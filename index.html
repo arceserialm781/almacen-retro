@@ -1,19 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>video</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF=8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacen Retro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-	video{
-	margin-top: 100px;
-}
-</style>
 <body>
-<center>
-<video width="320" height="240" autoplay controls>
-  <source src="media/video.mp4" type="video/mp4">	
-</center>
+
+    <header class="header-retro">
+        <h1>Almacen Retro</h1>
+        <p class="subtitulo">Bienvenido al catálogo oficial de consolas y videojuegos vintage.</p>
+    </header>
+
+    <main class="contenedor-principal">
+        <div class="grilla-productos">
+            
+            <div class="tarjeta-producto">
+                <div class="imagen-placeholder">🕹️</div>
+                <h3>Super Nintendo</h3>
+                <p class="precio">$150.00</p>
+                <button class="btn-detalles" onclick="alert('Invocando Registro Clave: CON-SNE-01')">Ver Detalles</button>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="imagen-placeholder">💾</div>
+                <h3>Zelda: Ocarina N64</h3>
+                <p class="precio">$85.00</p>
+                <button class="btn-detalles" onclick="alert('Invocando Registro Clave: GAM-ZEL-02')">Ver Detalles</button>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="imagen-placeholder">🎮</div>
+                <h3>Joystick SEGA</h3>
+                <p class="precio">$25.00</p>
+                <button class="btn-detalles" onclick="alert('Invocando Registro Clave: ACC-GEN-03')">Ver Detalles</button>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="imagen-placeholder">📟</div>
+                <h3>GameBoy Advance</h3>
+                <p class="precio">$110.00</p>
+                <button class="btn-detalles" onclick="alert('Invocando Registro Clave: CON-GBA-04')">Ver Detalles</button>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="imagen-placeholder">🦔</div>
+                <h3>Sonic Genesis</h3>
+                <p class="precio">$40.00</p>
+                <button class="btn-detalles" onclick="alert('Invocando Registro Clave: GAM-SON-05')">Ver Detalles</button>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="imagen-placeholder">💿</div>
+                <h3>PlayStation 1</h3>
+                <p class="precio">$130.00</p>
+                <button class="btn-detalles" onclick="alert('Invocando Registro Clave: CON-PS1-06')">Ver Detalles</button>
+            </div>
+
+        </div>
+    </main>
+
 </body>
 </html>

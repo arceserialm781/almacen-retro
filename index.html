@@ -3,63 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almacen Retro</title>
+    <title>Almacén Retro - Tu e-Commerce de Tecnología Antigua</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header-retro">
-        <h1>Almacen Retro</h1>
-        <p class="subtitulo">Catálogo oficial de consolas y videojuegos vintage</p>
-    </header>
-
-    <main class="contenedor-principal">
-        <div class="grilla-productos">
-            
-            <div class="tarjeta-producto">
-                <div class="imagen-producto">🎮</div>
-                <h3>Super Nintendo</h3>
-                <p class="precio">$150.00</p>
-                <button class="btn-detalles" onclick="alert('Registro Clave: CON-SNE-01')">Ver Detalles</button>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">💾 Almacen_Retro.exe - Catálogo Oficial</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
             </div>
-
-            <div class="tarjeta-producto">
-                <div class="imagen-producto">💾</div>
-                <h3>Zelda N64</h3>
-                <p class="precio">$85.00</p>
-                <button class="btn-detalles" onclick="alert('Registro Clave: GAM-ZEL-02')">Ver Detalles</button>
-            </div>
-
-            <div class="tarjeta-producto">
-                <div class="imagen-producto">🕹️</div>
-                <h3>Joystick SEGA</h3>
-                <p class="precio">$25.00</p>
-                <button class="btn-detalles" onclick="alert('Registro Clave: ACC-GEN-03')">Ver Detalles</button>
-            </div>
-
-            <div class="tarjeta-producto">
-                <div class="imagen-producto">📟</div>
-                <h3>GameBoy Color</h3>
-                <p class="precio">$110.00</p>
-                <button class="btn-detalles" onclick="alert('Registro Clave: CON-GBC-04')">Ver Detalles</button>
-            </div>
-
-            <div class="tarjeta-producto">
-                <div class="imagen-producto">🦔</div>
-                <h3>Sonic Genesis</h3>
-                <p class="precio">$40.00</p>
-                <button class="btn-detalles" onclick="alert('Registro Clave: GAM-SON-05')">Ver Detalles</button>
-            </div>
-
-            <div class="tarjeta-producto">
-                <div class="imagen-producto">💿</div>
-                <h3>PlayStation 1</h3>
-                <p class="precio">$130.00</p>
-                <button class="btn-detalles" onclick="alert('Registro Clave: CON-PS1-06')">Ver Detalles</button>
-            </div>
-
         </div>
-    </main>
 
-</body>
-</html>
+        <div class="menu-bar">
+            <span><u>A</u>rchivo</span>
+            <span><u>E</u>dición</span>
+            <span><u>V</u>er</span>
+            <span><u>A</u>yuda</span>
+        </div>
+
+        <div class="window-body">
+            <p class="welcome-text">Bienvenido a <strong>Almacén Retro</strong>. Elige los mejores componentes y ordenadores del siglo pasado. Modelado de datos según directivas de la Unidad 2.</p>
+            
+            <div class="catalog-grid">
+                
+                <div class="product-card">
+                    <div class="product-image-placeholder">
+                        <span>📟 [FOTO]</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>IBM Personal Computer 5150</h3>
+                        <p class="status">Estado: En caja original</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> COMP-1981-001</div>
+                            <div><strong>Año Fab:</strong> 1981</div>
+                            <div><strong>Precio:</strong> $450.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-placeholder">
+                        <span>☎️ [FOTO]</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Teléfono Nokia 1100</h3>
+                        <p class="status">Estado: Funciona perfectamente</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> TELE-2003-042</div>
+                            <div><strong>Año Fab:</strong> 2003</div>
+                            <div><strong>Precio:</strong> $75.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-placeholder">
+                        <span>🕹️ [FOTO]</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Family Game (Micro Genius)</h3>
+                        <p class="status">Estado: Para repuesto</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> CONS-1992-015</div>
+                            <div><strong>Año Fab:</strong> 1992</div>
+                            <div><strong>Precio:</strong> $30.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="status-bar">

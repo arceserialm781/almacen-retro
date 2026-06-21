@@ -1,10 +1,10 @@
-/* Configuración General con Estilo Arcade */
+/* Estilo Retro Sólido (Inspirado en interfaces clásicas de los 90) */
 body {
-    background-color: #121214; /* Fondo oscuro */
-    color: #e1e1e6;
-    font-family: 'Courier New', Courier, monospace; /* Tipografía estilo código/retro */
+    background-color: #f0f0f0; /* Fondo gris claro clásico */
+    color: #000000; /* Texto negro neto */
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,97 +13,94 @@ body {
 /* Encabezado */
 .header-retro {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    border-bottom: 4px solid #000000;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
 }
 
 .header-retro h1 {
-    font-size: 3rem;
-    color: #39ff14; /* Verde neón clásico */
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
     text-transform: uppercase;
-    text-shadow: 0 0 10px #39ff14;
-    margin-bottom: 5px;
+    letter-spacing: 2px;
 }
 
 .header-retro .subtitulo {
-    color: #8257e5; /* Violeta retro */
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin: 0;
+    font-style: italic;
 }
 
-/* Contenedor de la Grilla Centrada */
+/* Contenedor Principal Centrado */
 .contenedor-principal {
-    max-width: 1000px;
+    max-width: 900px;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
-/* Grilla de 2 filas x 3 columnas según tu boceto */
+/* Grilla Clásica Estricta: 3 columnas idénticas */
 .grilla-productos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 25px; /* Separación de los cuadraditos */
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Espaciado uniforme entre los cuadrados */
 }
 
-/* Cada "Cuadrado" Pequeño (Tarjeta de Producto = Registro) */
+/* Cada cuadrado de producto del dibujo */
 .tarjeta-producto {
-    background-color: #1d1d22;
-    border: 3px solid #ff007f; /* Borde rosa neón */
-    border-radius: 4px;
+    background-color: #ffffff; /* Cuadrados blancos */
+    border: 3px solid #000000; /* Bordes negros gruesos */
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 8px #ff007f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-/* Icono o Imagen en la parte superior del cuadrado */
-.imagen-placeholder {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    background-color: #121214;
-    width: 80px;
-    height: 80px;
+/* Espacio superior para la Imagen */
+.imagen-producto {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    border: 2px dashed #ff007f;
-}
-
-.tarjeta-producto h3 {
-    margin: 10px 0;
-    font-size: 1.3rem;
-    color: #ffffff;
-}
-
-.precio {
-    color: #00ffff; /* Cyan retro */
-    font-size: 1.2rem;
-    font-weight: bold;
+    border: 2px solid #000000;
+    background-color: #e0e0e0;
     margin-bottom: 15px;
 }
 
-/* Botón interactivo en la base del cuadrado */
-.btn-detalles {
-    background-color: transparent;
-    color: #39ff14;
-    border: 2px solid #39ff14;
-    padding: 10px 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
+/* Título del artículo */
+.tarjeta-producto h3 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    text-align: center;
     text-transform: uppercase;
-    transition: all 0.2s ease;
-    width: 100%;
 }
 
-/* Efecto al pasar el mouse por encima del botón */
+/* Precio en formato Real */
+.precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+/* Botón "Ver Detalles" abajo de cada cuadrado */
+.btn-detalles {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 8px 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/* Comportamiento simple del botón al pasar el mouse */
 .btn-detalles:hover {
-    background-color: #39ff14;
-    color: #121214;
-    box-shadow: 0 0 15px #39ff14;
+    background-color: #000000;
+    color: #ffffff;
 }

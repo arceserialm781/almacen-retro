@@ -19,20 +19,30 @@
         </div>
 
         <div class="menu-bar">
-            <span><u>A</u>rchivo</span>
-            <span><u>E</u>dición</span>
-            <span><u>V</u>er</span>
-            <span><u>A</u>yuda</span>
+            <div class="menu-left">
+                <span><u>C</u>arrito (0)</span>
+                <span><u>E</u>dición</span>
+            </div>
+            
+            <div class="menu-search">
+                <label for="search-input">Buscar:</label>
+                <input type="text" id="search-input" class="win95-input" placeholder="Ej: Commodore 64..." readonly>
+                <button class="win95-btn-sm">Ir</button>
+            </div>
+
+            <div class="menu-right">
+                <span><u>A</u>yuda</span>
+            </div>
         </div>
 
         <div class="window-body">
-            <p class="welcome-text">Bienvenido a <strong>Almacén Retro</strong>. Elige los mejores componentes y ordenadores del siglo pasado. Modelado de datos según directivas de la Unidad 2.</p>
+            <p class="welcome-text"><strong>Almacén Retro:</strong> Tienda especializada en tecnología antigua.</p>
             
             <div class="catalog-grid">
                 
                 <div class="product-card">
                     <div class="product-image-placeholder">
-                        <span>📟 [FOTO]</span>
+                        <span>📟 [IBM 5150]</span>
                     </div>
                     <div class="product-info">
                         <h3>IBM Personal Computer 5150</h3>
@@ -48,11 +58,11 @@
 
                 <div class="product-card">
                     <div class="product-image-placeholder">
-                        <span>☎️ [FOTO]</span>
+                        <span>☎️ [Nokia 1100]</span>
                     </div>
                     <div class="product-info">
                         <h3>Teléfono Nokia 1100</h3>
-                        <p class="status">Estado: Funciona perfectamente</p>
+                        <p class="status">Estado: Excelente estado</p>
                         <div class="field-box">
                             <div><strong>Cod_Articulo:</strong> TELE-2003-042</div>
                             <div><strong>Año Fab:</strong> 2003</div>
@@ -64,7 +74,7 @@
 
                 <div class="product-card">
                     <div class="product-image-placeholder">
-                        <span>🕹️ [FOTO]</span>
+                        <span>🕹️ [Family Game]</span>
                     </div>
                     <div class="product-info">
                         <h3>Family Game (Micro Genius)</h3>
@@ -72,13 +82,4 @@
                         <div class="field-box">
                             <div><strong>Cod_Articulo:</strong> CONS-1992-015</div>
                             <div><strong>Año Fab:</strong> 1992</div>
-                            <div><strong>Precio:</strong> $30.00</div>
-                        </div>
-                        <button class="win95-btn">Añadir al Carrito</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="status-bar">
+                            <div><strong>Precio:</strong> $

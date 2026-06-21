@@ -104,7 +104,7 @@ body {
 .window-body {
     background-color: #ffffff;
     margin: 8px;
-    padding: 15px;
+    padding: 20px;
     border: 2px solid;
     border-color: #808080 #ffffff #ffffff #808080;
     flex-grow: 1;
@@ -113,17 +113,19 @@ body {
 }
 
 .welcome-text {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding-bottom: 8px;
     border-bottom: 1px dashed #808080;
 }
 
-/* Grilla del catálogo */
+/* Grilla del catálogo - Forzada a 2 filas de 4 y centrada */
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-bottom: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto 20px auto; /* Centra el bloque horizontalmente */
 }
 
 /* Tarjeta de Producto */

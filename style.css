@@ -204,18 +204,6 @@ body {
     cursor: default;
 }
 
-/* Contenedor Mostrar Más */
-.load-more-container {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 20px 0;
-}
-
-.show-more-btn {
-    width: auto;
-    padding: 4px 25px;
-}
-
 /* Paginación Simulada */
 .pagination-container {
     display: flex;
@@ -234,11 +222,10 @@ body {
     padding: 1px 6px;
 }
 
-/* Barra de Estado Inferior */
+/* Barra de Estado Inferior Limpia */
 .status-bar {
     display: flex;
     margin: 0 8px 4px 8px;
-    gap: 4px;
 }
 
 .status-bar-field {
@@ -246,5 +233,6 @@ body {
     padding: 2px 6px;
     border: 2px solid;
     border-color: #808080 #ffffff #ffffff #808080;
+    min-height: 20px;
     flex: 1;
 }

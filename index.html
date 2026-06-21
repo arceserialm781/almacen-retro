@@ -1,240 +1,169 @@
-/* Reset básico para simular entorno antiguo */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "MS Sans Serif", "Arial", sans-serif;
-    font-size: 14px;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacén Retro - Tu e-Commerce de Tecnología Antigua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    background-color: #008080; /* Fondo clásico verde/azul Windows 95 */
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">💾 Almacen_Retro.exe - Catálogo Oficial</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
 
-/* Contenedor de la Ventana - Maximizado casi al límite */
-.window {
-    background-color: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #0a0a0a #0a0a0a #ffffff; /* Relieve 3D */
-    box-shadow: 1px 1px 0 0 #000000;
-    width: 98vw;
-    min-height: 95vh;
-    padding: 3px;
-    display: flex;
-    flex-direction: column;
-}
+        <div class="menu-bar">
+            <div class="menu-left">
+                <span><u>C</u>arrito (0)</span>
+            </div>
+            
+            <div class="menu-search">
+                <label for="search-input">Buscar:</label>
+                <input type="text" id="search-input" class="win95-input" readonly>
+                <button class="win95-btn-sm">Ir</button>
+            </div>
 
-/* Barra de Título */
-.title-bar {
-    background: linear-gradient(90deg, #000080, #1080d0);
-    color: #ffffff;
-    padding: 4px 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
+            <div class="menu-right">
+                <span><u>A</u>yuda</span>
+            </div>
+        </div>
 
-.title-bar-text {
-    letter-spacing: 0.5px;
-}
+        <div class="window-body">
+            <p class="welcome-text"><strong>Almacén Retro:</strong> Tienda especializada en tecnología antigua.</p>
+            
+            <div class="catalog-grid">
+                
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>📟 [IBM 5150]</span></div>
+                    <div class="product-info">
+                        <h3>IBM Personal Computer 5150</h3>
+                        <p class="status">Estado: En caja original</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> COMP-1981-001</div>
+                            <div><strong>Año Fab:</strong> 1981</div>
+                            <div><strong>Precio:</strong> $450.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-/* Botones de control */
-.title-bar-controls button {
-    width: 16px;
-    height: 14px;
-    background-color: #c0c0c0;
-    border: 1px solid;
-    border-color: #ffffff #0a0a0a #0a0a0a #ffffff;
-    cursor: pointer;
-    margin-left: 2px;
-    position: relative;
-}
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>☎️ [Nokia 1100]</span></div>
+                    <div class="product-info">
+                        <h3>Teléfono Nokia 1100</h3>
+                        <p class="status">Estado: Excelente estado</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> TELE-2003-042</div>
+                            <div><strong>Año Fab:</strong> 2003</div>
+                            <div><strong>Precio:</strong> $75.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-.title-bar-controls button[aria-label="Close"]::before {
-    content: "×";
-    position: absolute;
-    top: -2px;
-    left: 3px;
-    font-weight: bold;
-    color: #000;
-}
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>🕹️ [Family Game]</span></div>
+                    <div class="product-info">
+                        <h3>Family Game (Micro Genius)</h3>
+                        <p class="status">Estado: Para repuesto</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> CONS-1992-015</div>
+                            <div><strong>Año Fab:</strong> 1992</div>
+                            <div><strong>Precio:</strong> $30.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-/* Barra de Menú Estilo Win95 */
-.menu-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px;
-    border-bottom: 1px solid #808080;
-    background-color: #c0c0c0;
-}
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>💾 [Commodore 64]</span></div>
+                    <div class="product-info">
+                        <h3>Commodore 64 (Completa)</h3>
+                        <p class="status">Estado: Funciona perfectamente</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> COMP-1982-004</div>
+                            <div><strong>Año Fab:</strong> 1982</div>
+                            <div><strong>Precio:</strong> $280.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-.menu-left, .menu-right {
-    display: flex;
-}
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>📼 [Walkman Sony]</span></div>
+                    <div class="product-info">
+                        <h3>Sony Walkman WM-F10</h3>
+                        <p class="status">Estado: Detalles estéticos</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> AUDI-1983-009</div>
+                            <div><strong>Año Fab:</strong> 1983</div>
+                            <div><strong>Precio:</strong> $110.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-.menu-bar span {
-    padding: 2px 8px;
-    cursor: pointer;
-}
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>📺 [Macintosh Plus]</span></div>
+                    <div class="product-info">
+                        <h3>Apple Macintosh Plus</h3>
+                        <p class="status">Estado: Colección (Amarilleado)</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> COMP-1986-002</div>
+                            <div><strong>Año Fab:</strong> 1986</div>
+                            <div><strong>Precio:</strong> $600.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-/* Contenedor de la barra de búsqueda */
-.menu-search {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>🎮 [Game Boy Color]</span></div>
+                    <div class="product-info">
+                        <h3>Nintendo Game Boy Color</h3>
+                        <p class="status">Estado: Sin tapa de pilas</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> CONS-1998-023</div>
+                            <div><strong>Año Fab:</strong> 1998</div>
+                            <div><strong>Precio:</strong> $95.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-.win95-input {
-    border: 2px solid;
-    border-color: #808080 #ffffff #ffffff #808080;
-    padding: 2px 4px;
-    background-color: #ffffff;
-    outline: none;
-    width: 250px;
-}
+                <div class="product-card">
+                    <div class="product-image-placeholder"><span>🖨️ [Imp. Matriz]</span></div>
+                    <div class="product-info">
+                        <h3>Impresora Matricial Epson LX-300</h3>
+                        <p class="status">Estado: Funciona, sin cinta</p>
+                        <div class="field-box">
+                            <div><strong>Cod_Articulo:</strong> COMP-1993-011</div>
+                            <div><strong>Año Fab:</strong> 1993</div>
+                            <div><strong>Precio:</strong> $150.00</div>
+                        </div>
+                        <button class="win95-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
 
-/* Cuerpo de la Ventana */
-.window-body {
-    background-color: #ffffff;
-    margin: 8px;
-    padding: 20px;
-    border: 2px solid;
-    border-color: #808080 #ffffff #ffffff #808080;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
+            </div>
 
-.welcome-text {
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 1px dashed #808080;
-}
+            <div class="pagination-container">
+                <button class="win95-btn-sm" disabled>&lt;&lt; Ant</button>
+                <span class="page-info">Página <strong class="inset-span">1</strong> de 4</span>
+                <button class="win95-btn-sm">Sig &gt;&gt;</button>
+            </div>
+        </div>
 
-/* Grilla del catálogo - Forzada a 2 filas de 4 y centrada */
-.catalog-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto 20px auto; /* Centra el bloque horizontalmente */
-}
+        <div class="status-bar">
+            <div class="status-bar-field"></div>
+        </div>
+    </div>
 
-/* Tarjeta de Producto */
-.product-card {
-    background-color: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #0a0a0a #0a0a0a #ffffff;
-    padding: 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.product-image-placeholder {
-    background-color: #808080;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    border: 2px solid;
-    border-color: #0a0a0a #ffffff #ffffff #0a0a0a;
-    font-weight: bold;
-}
-
-.product-info h3 {
-    font-size: 13px;
-    margin: 6px 0 4px 0;
-    color: #000;
-}
-
-.status {
-    font-size: 11px;
-    color: #404040;
-    margin-bottom: 6px;
-}
-
-/* Caja simuladora de campos del Registro */
-.field-box {
-    background-color: #fff;
-    border: 2px solid;
-    border-color: #808080 #ffffff #ffffff #808080;
-    padding: 6px;
-    font-size: 11px;
-    margin-bottom: 6px;
-    line-height: 1.4;
-}
-
-.field-box div strong {
-    color: #000080;
-}
-
-/* Botones Clásicos */
-.win95-btn {
-    width: 100%;
-    padding: 4px;
-    background-color: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #0a0a0a #0a0a0a #ffffff;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.win95-btn:active, .win95-btn-sm:active:not([disabled]) {
-    border-color: #0a0a0a #ffffff #ffffff #0a0a0a;
-}
-
-.win95-btn-sm {
-    padding: 2px 8px;
-    background-color: #c0c0c0;
-    border: 2px solid;
-    border-color: #ffffff #0a0a0a #0a0a0a #ffffff;
-    cursor: pointer;
-}
-
-.win95-btn-sm:disabled {
-    color: #808080;
-    cursor: default;
-}
-
-/* Paginación Simulada */
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: auto;
-    padding-top: 10px;
-    border-top: 1px solid #c0c0c0;
-}
-
-.inset-span {
-    background: #fff;
-    border: 1px solid;
-    border-color: #808080 #fff #fff #808080;
-    padding: 1px 6px;
-}
-
-/* Barra de Estado Inferior Limpia */
-.status-bar {
-    display: flex;
-    margin: 0 8px 4px 8px;
-}
-
-.status-bar-field {
-    background-color: #c0c0c0;
-    padding: 2px 6px;
-    border: 2px solid;
-    border-color: #808080 #ffffff #ffffff #808080;
-    min-height: 20px;
-    flex: 1;
-}
+</body>
+</html>
